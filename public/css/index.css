@@ -3,8 +3,10 @@
     --gray-900: rgb(17, 24, 39);
     --gray-200: rgb(229, 231, 235);
     --gray-300: rgb(209, 213, 219);
+    --yellow: #ffb700;
+    --green-300: #6EE7B7;
+    --green-400: #34D399;
 }
-
 
 html {
     font-family: 'Press Start 2P', cursive;
@@ -42,16 +44,22 @@ body {
 }
 
 h1 {
-    font-size: 10rem;
-    background: rgb(255, 183, 0);
-    background: linear-gradient(90deg, rgba(255, 183, 0, 1) 0%, rgb(255, 217, 0) 35%, rgba(255, 179, 0, 1) 100%);
+    background: var(--green-400);
+    background: linear-gradient(90deg, var(--green-400) 0%, var(--green-300) 35%, var(--green-400) 100%);
+    /* background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    /* background-position: 0;
+    animation-fill-mode: forwards;*/
+    /* animation: Flash 3s linear infinite;  */
+    font-size: 10rem;
+    padding: 12px 48px;
+    text-align: center;
 }
 
 p {
     font-size: 1rem;
-    color: var(--gray-300);
+    color: var(--white);
     text-align: center;
 }
 
@@ -101,6 +109,23 @@ p {
         transform: scale(0.2);
     }
 }
+
+@keyframes Flash {
+    0% {
+        background-position: -500%;
+    }
+    100% {
+        background-position: 500%;
+    }
+}
+
+/* @keyframes shine
+  0%
+    background-position: 0
+  60%
+    background-position: 180px
+  100%
+    background-position: 180px */
 
 .projects {
     display: none;

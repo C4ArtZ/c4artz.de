@@ -1,0 +1,50 @@
+p span{
+    font-size: 2rem;
+}
+
+button{
+    height: 3rem;
+    width: 25rem;
+    margin-top: 5rem;
+    justify-self: center;
+    display: none; /*grid*/
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-color: var(--white);
+}
+
+button span{
+    vertical-align: middle;
+}
+
+
+img{
+    transform: rotateZ(90deg);
+    width: 2rem;  
+}
+
+.back {
+    /* background-color: rebeccapurple; */
+    display: grid;
+    /* display: grid; */
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+    position: fixed;
+    /* Set the navbar to fixed position */
+    bottom: 10rem;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+}
+
+.error {
+    /* height: 50vh; */
+    /* width: 100vw; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 10rem 3rem 3rem;
+    /* animation: MoveUpDown 5s ease-in-out infinite; */
+}
