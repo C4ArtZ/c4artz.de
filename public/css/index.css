@@ -1,11 +1,12 @@
 :root {
     --white: #eee;
-    --gray-900: rgb(17, 24, 39);
-    --gray-200: rgb(229, 231, 235);
-    --gray-300: rgb(209, 213, 219);
+    --gray-900: #111827;
+    --gray-200: #e5e7eb;
+    --gray-300: #d1d5db;
     --yellow: #ffb700;
     --green-300: #6EE7B7;
     --green-400: #34D399;
+    --green-500: #10B981;
     font-size: 4px;
 }
 
@@ -19,6 +20,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: red;
+    overflow: hidden;
+    background-color: var(--gray-900);
 }
 
 .hero {
@@ -26,8 +29,7 @@ body {
     width: 100vw;
     padding: 0;
     margin: 0;
-    /* background: url('../assets/hideout.svg');  */
-    background-color: var(--gray-900);
+    /* background: url('../assets/hideout.svg');  */ 
     /* background-size: contain; */
     /* background-repeat:round;
     background-position: center; */
@@ -37,7 +39,7 @@ body {
     align-items: center;
 }
 
-h1 {
+h1{
     background: var(--green-400);
     background: linear-gradient(90deg, var(--green-400) 0%, var(--green-300) 35%, var(--green-400) 100%);
     /* background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%); */
@@ -50,6 +52,8 @@ h1 {
     padding: 12px 48px;
     text-align: center;
     padding: 0;
+    animation: MoveUpDown 5s ease-in-out infinite;
+    filter: drop-shadow(0.05rem 0.05rem var(--green-500)) drop-shadow(0.1rem 0.1rem var(--green-500)) drop-shadow(0.15rem 0.15rem var(--green-500));
 }
 
 p {
@@ -142,30 +146,33 @@ p {
 
 @keyframes MoveUpDown {
     0%, 100% {
-        transform: translateY(-0.25rem);
+        transform: translateY(-0.3rem);
     }
     50% {
-        transform: translateY(0.25rem);
+        transform: translateY(0.3rem);
     }
 }
 
 @keyframes ScaleUpDown {
-    0%, 100% {
-        transform: scale(0);
+    0%{
+        transform: scale(0) ;
+        opacity: 100%;
     }
-    50% {
-        transform: scale(0.2);
+    15%{
+        transform: scale(1.2);
+        opacity: 100%;
     }
+    25%{
+        /* transform: scale(0); */
+        opacity: 0%;
+    }
+    100%{
+        /* transform: scale(0); */
+        opacity: 0%;
+    }
+    
 }
 
-@keyframes Flash {
-    0% {
-        background-position: -500%;
-    }
-    100% {
-        background-position: 500%;
-    }
-}
 
 .noselect {
     -webkit-touch-callout: none;
@@ -182,3 +189,4 @@ p {
     /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
 }
+
