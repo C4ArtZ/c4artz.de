@@ -32,10 +32,6 @@
             I bims 1 Projekt!
         </div>
     </div> -->
-
-    <script>
-        abort(404);
-    </script>
 </body>
 
 </html>
