@@ -9,33 +9,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="{{ asset('css/index.css') }}">
-    <title>c4artz.de</title>
+    <link rel="stylesheet" href="{{ asset('css/error.css') }}">
+    <title>{{ $code }} | c4artz.de</title>
 </head>
 
 <body class="noselect">
     <div class="hero">
-
-        <div class="container">
-            <h1>C4ARTZ</h1>
-            <p>Gamer, Developer, Self hoster</p>
+        <div class="error">
+            <h1>{{ $code }}</h1>
+            <p>{{ $message }}<span>{{ $emote }}</span></p>
+            <a href="/"><img src="{{ asset('assets/arrow-hover.svg') }}" alt=""></span>Hier gehts' zurück zur Hauptseite</a>
+            <!-- <button type="button"><span><img src="{{ asset('assets/arrow-hover.svg') }}" alt="">Hier geht's zurück zur Hauptseite</span></button> -->
         </div>
-
-        <!-- <div class="stuff">
-            <p>What do I do?</p>
-            <img src="{{ asset('assets/arrow-hover.svg') }}" alt="">
-        </div>
-    </div>
-    <div class="projects">
-        <div class="project">
-            I bims 1 Projekt!
-        </div>
-    </div> -->
-
-    <script>
-        abort(404);
-    </script>
 </body>
 
 </html>

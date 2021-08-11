@@ -1,5 +1,1 @@
-@extends('errors::minimal')
-
-@section('title', __('Unauthorized'))
-@section('code', '401')
-@section('message', __('Unauthorized'))
+<x-http-error code="401" message="Halt stop! Dir fehlen die benötigten Berechtigungen." emote="🚓"></x-http-error>

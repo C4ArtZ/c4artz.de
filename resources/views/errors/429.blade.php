@@ -1,5 +1,1 @@
-@extends('errors::minimal')
-
-@section('title', __('Too Many Requests'))
-@section('code', '429')
-@section('message', __('Too Many Requests'))
+<x-http-error code="429" message="Ups! Du schickst uns zu viele Anfragen. Versuch es später noch einmal." emote="🤔"></x-http-error>

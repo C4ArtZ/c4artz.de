@@ -1,5 +1,1 @@
-@extends('errors::minimal')
-
-@section('title', __('Server Error'))
-@section('code', '500')
-@section('message', __('Server Error'))
+<x-http-error code="500" message="Unser Server hat sich wohl verrechnet. Versuch es bitte später noch einmal." emote="🤔"></x-http-error>

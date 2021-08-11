@@ -1,5 +1,1 @@
-@extends('errors::minimal')
-
-@section('title', __('Page Expired'))
-@section('code', '419')
-@section('message', __('Page Expired'))
+<x-http-error code="419" message="Halt stop! Anfragen von anderen Webseiten sind nicht erlaubt." emote="🚨"></x-http-error>

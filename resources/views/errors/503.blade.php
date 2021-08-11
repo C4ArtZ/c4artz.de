@@ -1,5 +1,1 @@
-@extends('errors::minimal')
-
-@section('title', __('Service Unavailable'))
-@section('code', '503')
-@section('message', __('Service Unavailable'))
+<x-http-error code="503" message="Dieser Dienst ist zur Zeit nicht erreichbar. Versuch es später nochmal." emote="🤔"></x-http-error>
