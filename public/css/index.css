@@ -7,7 +7,7 @@
     --green-300: #6EE7B7;
     --green-400: #34D399;
     --green-500: #10B981;
-    font-size: 4px;
+    font-size: 8px;
 }
 
 /* For mobile phones: */
@@ -68,37 +68,71 @@ p {
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-rows: 10rem 3rem;
+    grid-template-rows: 12rem 3rem;
     /* animation: MoveUpDown 5s ease-in-out infinite; */
 }
 
+/*Tiny devices*/
 
-
+@media only screen and (max-width: 300px) {
+    h1{
+        font-size: 5rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+}
 
 /* Extra small devices (phones, 600px and down) */
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (min-width: 300px) {
+    h1{
+        font-size: 6rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (min-width: 600px) {
     :root {
-        font-size: 8px;
+        font-size: 10px;
+    }
+    h1{
+        font-size: 6rem;
+    }
+    p{
+        font-size: 1.5rem;
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    :root {
+        font-size: 14px;
+    }
+    h1{
+        font-size: 6rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 
 @media only screen and (min-width: 992px) {
     :root {
-        font-size: 12px;
+        font-size: 14px;
+    }
+    h1{
+        font-size: 6rem;
     }
     p {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 }
 
@@ -108,8 +142,11 @@ p {
     :root {
         font-size: 16px;
     }
+    h1{
+        font-size: 12rem;
+    }
     p {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 }
 
