@@ -13,6 +13,7 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="{{ asset('css/index.css') }}">
     <link rel="stylesheet" href="{{ asset('css/error.css') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/favicon32.png') }}">
     <title>{{ $code }} | c4artz.de</title>
 </head>
 
