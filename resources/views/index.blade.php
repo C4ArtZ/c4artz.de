@@ -7,9 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#111827">
     <meta name="description" content="C4ArtZ ist ein Gamer, selbst gelernter C#, JS und PHP Entwickler und eifriger Self hoster.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/index.css') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/favicon32.png') }}">
     <title>c4artz.de</title>
