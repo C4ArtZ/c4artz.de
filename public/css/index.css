@@ -78,6 +78,7 @@ h1 {
     filter: drop-shadow(0.05rem 0.05rem var(--green-500)) drop-shadow(0.1rem 0.1rem var(--green-500)) drop-shadow(0.15rem 0.15rem var(--green-500)) drop-shadow(0.2rem 0.2rem var(--green-500));
 }
 
+
 p {
     font-size: 2rem;
     color: var(--white);
@@ -101,6 +102,7 @@ a {
     z-index: 999;
     /* gap: 1rem; */
     /* border-bottom: 1px solid red; */
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, var(--gray-900) 100%);
 }
 
 .navbar ul {

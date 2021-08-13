@@ -5,7 +5,7 @@
         <li><a href="/#projects">Projekte</a></li>
         {{-- <li><div onclick="scrollToID('projects')">Projekte</div></li> --}}
 
-        <li><a href="/ueber-mich">Über<span class="space"> </span>mich</a></li>
+        {{-- <li><a href="/ueber-mich">Über<span class="space"> </span>mich</a></li> --}}
     </ul>
 
 
