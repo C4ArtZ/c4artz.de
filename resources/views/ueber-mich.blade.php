@@ -10,30 +10,19 @@
     <link rel="stylesheet" href="{{ asset('css/index.css') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/favicon32.png') }}">
     <title>c4artz.de</title>
-    <script src="{{ asset('js/app.js')}}"></script>
 </head>
 
 <body class="noselect">
     <x-navbar></x-navbar>
     <div class="hero">
         <div class="container">
-            <h1>C4ARTZ</h1>
-            <p>Gamer, Developer, Self<span class="space"> </span>hoster</p>
+            <h1>Über mich</h1>
         </div>
         <div class="svg-container">
-            <!-- <a href="#projects">
+            <a href="#projects">
                 <x-icon name="down-arrow"></x-icon>
-            </a>  -->
-            <div onclick="scrollToID('projects')">
-                <x-icon name="down-arrow"></x-icon>
-            </div>
+            </a>
         </div>
-    </div>
-    <div class="projects" id="projects">
-        <h1>Projekte</h1>
-    </div>
-    <div class="footer">
-        <p>Copyright &copy 2021 C4ArtZ - Alle Rechte vorbehalten.</p>
     </div>
 </body>
 
